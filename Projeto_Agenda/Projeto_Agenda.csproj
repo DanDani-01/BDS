@@ -51,16 +51,34 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet_Agenda.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ConPessoas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConPessoas.Designer.cs">
+      <DependentUpon>ConPessoas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmCadPessoas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FrmCadPessoas.Designer.cs">
       <DependentUpon>FrmCadPessoas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\MDI_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MDI_menu.Designer.cs">
+      <DependentUpon>MDI_menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\ConPessoas.resx">
+      <DependentUpon>ConPessoas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmCadPessoas.resx">
       <DependentUpon>FrmCadPessoas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MDI_menu.resx">
+      <DependentUpon>MDI_menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

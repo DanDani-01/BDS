@@ -17,7 +17,7 @@ namespace Projeto_Agenda
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCadPessoas());
+            Application.Run(new MDI_menu());
         }
     }
 }
