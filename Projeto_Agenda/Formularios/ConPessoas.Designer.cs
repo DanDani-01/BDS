@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvPessoas = new System.Windows.Forms.DataGridView();
-            this.dataSet_Agenda = new Projeto_Agenda.Dados.DataSet_Agenda();
-            this.dataSetAgendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pessoaMBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pessoa_MTableAdapter = new Projeto_Agenda.Dados.DataSet_AgendaTableAdapters.Pessoa_MTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.endereçoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataNascimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pessoaMBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet_Agenda = new Projeto_Agenda.Dados.DataSet_Agenda();
+            this.dataSetAgendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pessoa_MTableAdapter = new Projeto_Agenda.Dados.DataSet_AgendaTableAdapters.Pessoa_MTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,9 +48,9 @@
             this.txtValor = new System.Windows.Forms.TextBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPessoas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaMBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_Agenda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetAgendaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaMBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvPessoas
@@ -69,27 +69,8 @@
             this.dgvPessoas.Name = "dgvPessoas";
             this.dgvPessoas.RowHeadersWidth = 62;
             this.dgvPessoas.RowTemplate.Height = 28;
-            this.dgvPessoas.Size = new System.Drawing.Size(750, 150);
+            this.dgvPessoas.Size = new System.Drawing.Size(965, 271);
             this.dgvPessoas.TabIndex = 0;
-            // 
-            // dataSet_Agenda
-            // 
-            this.dataSet_Agenda.DataSetName = "DataSet_Agenda";
-            this.dataSet_Agenda.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataSetAgendaBindingSource
-            // 
-            this.dataSetAgendaBindingSource.DataSource = this.dataSet_Agenda;
-            this.dataSetAgendaBindingSource.Position = 0;
-            // 
-            // pessoaMBindingSource
-            // 
-            this.pessoaMBindingSource.DataMember = "Pessoa_M";
-            this.pessoaMBindingSource.DataSource = this.dataSet_Agenda;
-            // 
-            // pessoa_MTableAdapter
-            // 
-            this.pessoa_MTableAdapter.ClearBeforeFill = true;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -140,6 +121,25 @@
             this.dataNascimentoDataGridViewTextBoxColumn.Name = "dataNascimentoDataGridViewTextBoxColumn";
             this.dataNascimentoDataGridViewTextBoxColumn.Width = 150;
             // 
+            // pessoaMBindingSource
+            // 
+            this.pessoaMBindingSource.DataMember = "Pessoa_M";
+            this.pessoaMBindingSource.DataSource = this.dataSet_Agenda;
+            // 
+            // dataSet_Agenda
+            // 
+            this.dataSet_Agenda.DataSetName = "DataSet_Agenda";
+            this.dataSet_Agenda.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataSetAgendaBindingSource
+            // 
+            this.dataSetAgendaBindingSource.DataSource = this.dataSet_Agenda;
+            this.dataSetAgendaBindingSource.Position = 0;
+            // 
+            // pessoa_MTableAdapter
+            // 
+            this.pessoa_MTableAdapter.ClearBeforeFill = true;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -152,7 +152,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(215, 56);
+            this.label2.Location = new System.Drawing.Point(282, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 20);
             this.label2.TabIndex = 2;
@@ -162,7 +162,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(423, 56);
+            this.label3.Location = new System.Drawing.Point(491, 56);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 20);
             this.label3.TabIndex = 3;
@@ -196,32 +196,34 @@
             "Que termina com",
             "Que contém",
             "Que esteja entre"});
-            this.cmbBuscar.Location = new System.Drawing.Point(219, 79);
+            this.cmbBuscar.Location = new System.Drawing.Point(286, 79);
             this.cmbBuscar.Name = "cmbBuscar";
             this.cmbBuscar.Size = new System.Drawing.Size(186, 28);
             this.cmbBuscar.TabIndex = 5;
             // 
             // txtValor
             // 
-            this.txtValor.Location = new System.Drawing.Point(427, 81);
+            this.txtValor.Location = new System.Drawing.Point(495, 81);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(168, 26);
             this.txtValor.TabIndex = 6;
+            this.txtValor.TextChanged += new System.EventHandler(this.txtValor_TextChanged);
             // 
             // btnFiltrar
             // 
-            this.btnFiltrar.Location = new System.Drawing.Point(632, 74);
+            this.btnFiltrar.Location = new System.Drawing.Point(840, 74);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(144, 37);
+            this.btnFiltrar.Size = new System.Drawing.Size(151, 37);
             this.btnFiltrar.TabIndex = 7;
             this.btnFiltrar.Text = "Filtrar";
             this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
             // ConPessoas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1014, 425);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.cmbBuscar);
@@ -231,12 +233,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvPessoas);
             this.Name = "ConPessoas";
-            this.Text = "ConPessoas";
+            this.Text = "Consulta Pessoas";
             this.Load += new System.EventHandler(this.ConPessoas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPessoas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaMBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_Agenda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetAgendaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaMBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

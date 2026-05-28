@@ -33,5 +33,45 @@ namespace Projeto_Agenda.Formularios
         {
 
         }
+
+        private void txtValor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            string filtro;
+            if (cmbColuna.SelectedIndex == -1)
+            {
+                MessageBox.Show("Selecione uma coluna para filtrar.");
+                return;
+            }
+            filtro = cmbColuna.Text;
+
+            string busca = cmbBuscar.Text;
+            if (busca == "Igual")
+            {
+                filtro += " = '" + txtValor.Text + "'";
+            }
+            else if (busca == "Que começa com")
+            {
+                filtro += " like '" + txtValor.Text + "%'";
+            }
+            else if (busca == "Que termina com")
+            {
+                filtro += " like '%" + txtValor.Text + "'";
+            }
+            else if (busca == "Que contém")
+            {
+                filtro += " like '%" + txtValor.Text + "%'";
+            }
+            else
+            {
+                MessageBox.Show("Selecione um tipo de busca.");
+                return;
+            }
+            pessoaMBindingSource.Filter = filtro;
+        }
     }
 }

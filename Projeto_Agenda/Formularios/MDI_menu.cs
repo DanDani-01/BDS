@@ -37,5 +37,10 @@ namespace Projeto_Agenda.Formularios
             ConPessoas.MdiParent = this;
             ConPessoas.Show();
         }
+
+        private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
