@@ -19,11 +19,20 @@ namespace Projeto_Agenda.Formularios
 
         private void pessoasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmCadPessoas frmCadPessoas = new FrmCadPessoas();
-            frmCadPessoas.MdiParent = this;
-            frmCadPessoas.Show();
+            foreach (Form formAberto in this.MdiChildren)
+            {
+                if (formAberto is FrmCadPessoas)
+                {
+                    formAberto.Activate();
+                    return;
+                }
+            }
 
-           
+            FrmCadPessoas novoForm = new FrmCadPessoas
+            {
+                MdiParent = this
+            };
+            novoForm.Show();
         }
        
         private void formulariosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -33,12 +42,28 @@ namespace Projeto_Agenda.Formularios
 
         private void pessoasToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            ConPessoas ConPessoas = new ConPessoas();
-            ConPessoas.MdiParent = this;
-            ConPessoas.Show();
+            foreach (Form formAberto in this.MdiChildren)
+            {
+                if (formAberto is ConPessoas)
+                {
+                    formAberto.Activate();
+                    return;
+                }
+            }
+
+            ConPessoas novoForm = new ConPessoas
+            {
+                MdiParent = this
+            };
+            novoForm.Show();
         }
 
         private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MDI_menu_Load(object sender, EventArgs e)
         {
 
         }

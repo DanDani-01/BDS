@@ -78,7 +78,7 @@
             // pessoasToolStripMenuItem2
             // 
             this.pessoasToolStripMenuItem2.Name = "pessoasToolStripMenuItem2";
-            this.pessoasToolStripMenuItem2.Size = new System.Drawing.Size(270, 34);
+            this.pessoasToolStripMenuItem2.Size = new System.Drawing.Size(176, 34);
             this.pessoasToolStripMenuItem2.Text = "Pessoas";
             this.pessoasToolStripMenuItem2.Click += new System.EventHandler(this.pessoasToolStripMenuItem2_Click);
             // 
@@ -99,6 +99,7 @@
             this.Name = "MDI_menu";
             this.Text = "*Menu Principal*";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MDI_menu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

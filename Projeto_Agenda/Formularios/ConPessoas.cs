@@ -66,6 +66,10 @@ namespace Projeto_Agenda.Formularios
             {
                 filtro += " like '%" + txtValor.Text + "%'";
             }
+            else if(busca == "Todos")
+            {
+                filtro = "";
+            }
             else
             {
                 MessageBox.Show("Selecione um tipo de busca.");

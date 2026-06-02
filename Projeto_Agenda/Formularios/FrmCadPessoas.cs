@@ -31,5 +31,19 @@ namespace Projeto_Agenda.Formularios
             this.pessoa_MTableAdapter.Fill(this.dataSet_Agenda.Pessoa_M);
 
         }
+
+        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Tem certeza que deseja excluir este registro?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                
+                this.pessoa_MBindingSource.RemoveCurrent();
+                this.tableAdapterManager.UpdateAll(this.dataSet_Agenda);
+            }
+            else
+            {
+                MessageBox.Show("Exclusão cancelada.");
+            }
+        }
     }
 }
