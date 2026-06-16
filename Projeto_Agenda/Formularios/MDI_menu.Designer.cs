@@ -79,7 +79,7 @@
             // pessoasToolStripMenuItem2
             // 
             this.pessoasToolStripMenuItem2.Name = "pessoasToolStripMenuItem2";
-            this.pessoasToolStripMenuItem2.Size = new System.Drawing.Size(270, 34);
+            this.pessoasToolStripMenuItem2.Size = new System.Drawing.Size(176, 34);
             this.pessoasToolStripMenuItem2.Text = "Pessoas";
             this.pessoasToolStripMenuItem2.Click += new System.EventHandler(this.pessoasToolStripMenuItem2_Click);
             // 
@@ -96,6 +96,7 @@
             this.pessoasToolStripMenuItem1.Name = "pessoasToolStripMenuItem1";
             this.pessoasToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
             this.pessoasToolStripMenuItem1.Text = "Pessoas";
+            this.pessoasToolStripMenuItem1.Click += new System.EventHandler(this.pessoasToolStripMenuItem1_Click);
             // 
             // MDI_menu
             // 

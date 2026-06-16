@@ -67,5 +67,10 @@ namespace Projeto_Agenda.Formularios
         {
 
         }
+
+        private void pessoasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
