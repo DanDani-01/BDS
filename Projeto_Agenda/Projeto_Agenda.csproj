@@ -89,6 +89,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RELATORIOS\Listagem_Pessoas.rdlc" />
     <None Include="Dados\DataSet_Agenda.xsc">
       <DependentUpon>DataSet_Agenda.xsd</DependentUpon>
     </None>
@@ -113,8 +114,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Relatorios\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

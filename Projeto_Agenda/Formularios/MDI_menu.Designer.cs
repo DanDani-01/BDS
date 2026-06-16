@@ -34,6 +34,7 @@
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pessoasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pessoasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,15 +79,23 @@
             // pessoasToolStripMenuItem2
             // 
             this.pessoasToolStripMenuItem2.Name = "pessoasToolStripMenuItem2";
-            this.pessoasToolStripMenuItem2.Size = new System.Drawing.Size(176, 34);
+            this.pessoasToolStripMenuItem2.Size = new System.Drawing.Size(270, 34);
             this.pessoasToolStripMenuItem2.Text = "Pessoas";
             this.pessoasToolStripMenuItem2.Click += new System.EventHandler(this.pessoasToolStripMenuItem2_Click);
             // 
             // relatoriosToolStripMenuItem
             // 
+            this.relatoriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pessoasToolStripMenuItem1});
             this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
             this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(106, 29);
             this.relatoriosToolStripMenuItem.Text = "Relatorios";
+            // 
+            // pessoasToolStripMenuItem1
+            // 
+            this.pessoasToolStripMenuItem1.Name = "pessoasToolStripMenuItem1";
+            this.pessoasToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.pessoasToolStripMenuItem1.Text = "Pessoas";
             // 
             // MDI_menu
             // 
@@ -115,5 +124,6 @@
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pessoasToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem relatoriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pessoasToolStripMenuItem1;
     }
 }

@@ -27,7 +27,7 @@ namespace Projeto_Agenda.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=172.16.255.252;Initial Catalog=db_250174;User ID=250174;Password=A123" +
-            "45678a;TrustServerCertificate=True")]
+            "456789a;TrustServerCertificate=True")]
         public string db_250174ConnectionString {
             get {
                 return ((string)(this["db_250174ConnectionString"]));
