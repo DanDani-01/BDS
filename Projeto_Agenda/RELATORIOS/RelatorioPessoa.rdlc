@@ -6,22 +6,22 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.5475cm</Width>
+              <Width>2.01199cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.02917cm</Width>
+              <Width>2.77046cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.20556cm</Width>
+              <Width>3.33491cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.12324cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.38194cm</Width>
+              <Width>4.10407cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.25847cm</Width>
+              <Width>2.85866cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -41,7 +41,7 @@
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>#666666</Color>
+                                <Color>Aqua</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -60,7 +60,7 @@
                           <Style>Solid</Style>
                           <Width>1pt</Width>
                         </BottomBorder>
-                        <BackgroundColor>White</BackgroundColor>
+                        <BackgroundColor>Black</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -82,7 +82,7 @@
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>#666666</Color>
+                                <Color>Aqua</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -101,7 +101,7 @@
                           <Style>Solid</Style>
                           <Width>1pt</Width>
                         </BottomBorder>
-                        <BackgroundColor>White</BackgroundColor>
+                        <BackgroundColor>Black</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -123,7 +123,7 @@
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>#666666</Color>
+                                <Color>Aqua</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -142,7 +142,7 @@
                           <Style>Solid</Style>
                           <Width>1pt</Width>
                         </BottomBorder>
-                        <BackgroundColor>White</BackgroundColor>
+                        <BackgroundColor>Black</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -164,7 +164,7 @@
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>#666666</Color>
+                                <Color>Aqua</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -183,7 +183,7 @@
                           <Style>Solid</Style>
                           <Width>1pt</Width>
                         </BottomBorder>
-                        <BackgroundColor>White</BackgroundColor>
+                        <BackgroundColor>Black</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -205,7 +205,7 @@
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>#666666</Color>
+                                <Color>Aqua</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -224,7 +224,7 @@
                           <Style>Solid</Style>
                           <Width>1pt</Width>
                         </BottomBorder>
-                        <BackgroundColor>White</BackgroundColor>
+                        <BackgroundColor>Black</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -242,11 +242,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Data Nascimento</Value>
+                              <Value>Nascimento</Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>#666666</Color>
+                                <Color>Aqua</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -265,7 +265,7 @@
                           <Style>Solid</Style>
                           <Width>1pt</Width>
                         </BottomBorder>
-                        <BackgroundColor>White</BackgroundColor>
+                        <BackgroundColor>Black</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -288,7 +288,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!ID.Value</Value>
+                              <Value>=Sum(Fields!ID.Value)</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
@@ -479,6 +479,209 @@
                 </TablixCell>
               </TablixCells>
             </TablixRow>
+            <TablixRow>
+              <Height>0.6cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox14">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=CStr(Count(Fields!ID.Value)) + " Pessoa(s) Listada(s)"</Value>
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>Aqua</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox14</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>Black</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox15">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>Aqua</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox15</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>Black</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox16">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>Aqua</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox16</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>Black</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox17">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>Aqua</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox17</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>Black</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox18">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>Aqua</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox18</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>Black</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox19">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>Aqua</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox19</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>Black</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
           </TablixRows>
         </TablixBody>
         <TablixColumnHierarchy>
@@ -499,20 +702,14 @@
             <TablixMember>
               <Group Name="Detalhes" />
             </TablixMember>
+            <TablixMember>
+              <KeepWithGroup>Before</KeepWithGroup>
+            </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSet1</DataSetName>
-        <Filters>
-          <Filter>
-            <FilterExpression>=IIF(RowNumber(nothing) Mod 2 = 0, "aqua", "white")</FilterExpression>
-            <Operator>Equal</Operator>
-            <FilterValues>
-              <FilterValue />
-            </FilterValues>
-          </Filter>
-        </Filters>
-        <Height>1.2cm</Height>
-        <Width>16.92264cm</Width>
+        <DataSetName>DataSet_Pessoa</DataSetName>
+        <Height>1.8cm</Height>
+        <Width>18.20333cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -523,7 +720,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>6.68329in</Width>
+  <Width>7.16667in</Width>
   <Page>
     <PageHeader>
       <Height>2.54cm</Height>
@@ -537,20 +734,21 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>LISTAGEM DE PESSOAS</Value>
-                  <Style />
+                  <Value>Listagem de Pessoas da Agenda</Value>
+                  <Style>
+                    <FontSize>22pt</FontSize>
+                    <Color>Red</Color>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
+              <Style />
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox13</rd:DefaultName>
-          <Top>0.60537cm</Top>
-          <Left>4.57667cm</Left>
-          <Height>0.67056cm</Height>
-          <Width>8.72653cm</Width>
+          <Top>1.0287cm</Top>
+          <Left>1.65333cm</Left>
+          <Height>1.10561cm</Height>
+          <Width>12.90694cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -578,8 +776,8 @@
         </Border>
       </Style>
     </PageFooter>
-    <PageHeight>29.7cm</PageHeight>
-    <PageWidth>21cm</PageWidth>
+    <PageHeight>20.32cm</PageHeight>
+    <PageWidth>27.94cm</PageWidth>
     <LeftMargin>2cm</LeftMargin>
     <RightMargin>2cm</RightMargin>
     <TopMargin>2cm</TopMargin>
@@ -594,11 +792,11 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>a2115e69-ccaf-48e9-aca1-2c614fabb848</rd:DataSourceID>
+      <rd:DataSourceID>45da2d3c-b9ba-4cdf-89f6-20a845b1751a</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="DataSet_Pessoa">
       <Query>
         <DataSourceName>DataSet_Agenda</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -640,5 +838,5 @@
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>b9e9248c-1052-40a8-b12a-c098d0c4d96e</rd:ReportID>
+  <rd:ReportID>e72d90a8-34c6-4067-bd77-0c6292402855</rd:ReportID>
 </Report>

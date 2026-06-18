@@ -89,7 +89,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RELATORIOS\Listagem_Pessoas.rdlc" />
+    <EmbeddedResource Include="RELATORIOS\RelatorioPessoa.rdlc" />
     <None Include="Dados\DataSet_Agenda.xsc">
       <DependentUpon>DataSet_Agenda.xsd</DependentUpon>
     </None>
