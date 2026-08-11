@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogon));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_user = new System.Windows.Forms.Label();
@@ -36,7 +37,9 @@
             this.txt_senha = new System.Windows.Forms.TextBox();
             this.btn_ok = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -90,6 +93,7 @@
             this.btn_ok.TabIndex = 5;
             this.btn_ok.Text = "OK";
             this.btn_ok.UseVisualStyleBackColor = true;
+            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
             this.btn_ok.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn_ok_KeyDown);
             // 
             // btn_cancelar
@@ -100,6 +104,10 @@
             this.btn_cancelar.TabIndex = 6;
             this.btn_cancelar.Text = "CANCELAR";
             this.btn_cancelar.UseVisualStyleBackColor = true;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // frmLogon
             // 
@@ -117,6 +125,7 @@
             this.Name = "frmLogon";
             this.Text = "frmLogon";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,5 +140,6 @@
         private System.Windows.Forms.TextBox txt_senha;
         private System.Windows.Forms.Button btn_ok;
         private System.Windows.Forms.Button btn_cancelar;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

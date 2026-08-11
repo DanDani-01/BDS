@@ -33,5 +33,29 @@ namespace Projeto_Agenda.Properties {
                 return ((string)(this["db_250174ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NomeUsuarioLogado {
+            get {
+                return ((string)(this["NomeUsuarioLogado"]));
+            }
+            set {
+                this["NomeUsuarioLogado"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int NivelUsuarioLogado {
+            get {
+                return ((int)(this["NivelUsuarioLogado"]));
+            }
+            set {
+                this["NivelUsuarioLogado"] = value;
+            }
+        }
     }
 }

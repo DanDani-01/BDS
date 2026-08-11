@@ -69,6 +69,12 @@
     <Compile Include="Formularios\frmLogon.Designer.cs">
       <DependentUpon>frmLogon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmSplashScreen.Designer.cs">
+      <DependentUpon>FrmSplashScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\MDI_menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmLogon.resx">
       <DependentUpon>frmLogon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmSplashScreen.resx">
+      <DependentUpon>FrmSplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\MDI_menu.resx">
       <DependentUpon>MDI_menu.cs</DependentUpon>
@@ -105,7 +114,6 @@
     <None Include="Dados\DataSet_Agenda.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet_Agenda.Designer.cs</LastGenOutput>
     </None>
     <None Include="Dados\DataSet_Agenda.xss">
       <DependentUpon>DataSet_Agenda.xsd</DependentUpon>

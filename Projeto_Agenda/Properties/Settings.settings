@@ -10,5 +10,11 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=172.16.255.252;Initial Catalog=db_250174;User ID=250174;Password=A123456789a;TrustServerCertificate=True</Value>
     </Setting>
+    <Setting Name="NomeUsuarioLogado" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="NivelUsuarioLogado" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
