@@ -38,7 +38,16 @@ namespace Projeto_Agenda.Formularios
             {
                 errorProvider1.SetError(txt_usuario, "");
             }
-                DataTable dt = new DataTable();
+            if (txt_senha.Text == "")
+            {
+                errorProvider1.SetError(txt_senha, "Preencha corretamente, companheiro!");
+                return;
+            }
+            else
+            {
+                errorProvider1.SetError(txt_senha, "");
+            }
+            DataTable dt = new DataTable();
             USUARIOTableAdapter taUsuario = new USUARIOTableAdapter();
             dt = taUsuario.Procurar_Usuario(txt_usuario.Text, txt_senha.Text);
             if (dt.Rows.Count > 0)//se achou algum registro, então o usuário e senha estão corretos
